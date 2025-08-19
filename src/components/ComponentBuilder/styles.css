@@ -1,0 +1,4 @@
+.component-builder {
+  display: flex;
+  flex-direction: column;
+}
