@@ -2,12 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
+import projects from "../../projects.json";
+
 const ComponentBuilder = () => {
   return (
     <div className="component-builder">
-      <Link to="/counter">Counter</Link>
-      <Link to="/chips-input">Chips Input</Link>
-      <Link to="/color-explorer">Color Explorer</Link>
+      {projects.map((project) => {
+        const { id, link, name } = project;
+        return (
+          <Link to={link} key={id}>
+            {name}
+          </Link>
+        );
+      })}
     </div>
   );
 };
