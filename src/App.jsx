@@ -5,6 +5,7 @@ import ColorExplorer from "./components/ColorExplorer/ColorExplorer";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ComponentBuilder from "./components/ComponentBuilder/ComponentBuilder";
 import CopyClipboard from "./components/CopyToClipboard/CopyToClipboard";
+import CustomHook from "./components/CustomHook/CustomHook";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/chips-input" element={<ChipsInput />} />
         <Route path="/color-explorer" element={<ColorExplorer />} />
         <Route path="/copy-to-clipboard" element={<CopyClipboard />} />
+        <Route path="/toggle-button-custom-hook" element={<CustomHook />} />
       </Routes>
     </BrowserRouter>
   );
