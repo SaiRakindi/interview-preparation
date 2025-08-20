@@ -13,10 +13,5 @@
     "id": 3,
     "name": "Color Explorer",
     "link": "/color-explorer"
-  },
-  {
-    "id": 4,
-    "name": "Copy to Clipboard",
-    "link": "/copy-to-clipboard"
   }
 ]
