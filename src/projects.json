@@ -18,5 +18,10 @@
     "id": 4,
     "name": "Copy to Clipboard",
     "link": "/copy-to-clipboard"
+  },
+  {
+    "id": 4,
+    "name": "Toggle button using custom hook",
+    "link": "/toggle-button-custom-hook"
   }
 ]
