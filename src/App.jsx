@@ -4,6 +4,7 @@ import ChipsInput from "./components/Chipsinput/ChipsInput";
 import ColorExplorer from "./components/ColorExplorer/ColorExplorer";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ComponentBuilder from "./components/ComponentBuilder/ComponentBuilder";
+import CopyClipboard from "./components/CopyToClipboard/CopyToClipboard";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/counter" element={<Counter />} />
         <Route path="/chips-input" element={<ChipsInput />} />
         <Route path="/color-explorer" element={<ColorExplorer />} />
+        <Route path="/copy-to-clipboard" element={<CopyClipboard />} />
       </Routes>
     </BrowserRouter>
   );
