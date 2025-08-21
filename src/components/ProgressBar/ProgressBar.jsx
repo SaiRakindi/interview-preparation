@@ -4,7 +4,9 @@ const ProgressBar = () => {
   const [progress, setProgress] = useState(0);
 
   const getBackgroundColor = () => {
-    return "green";
+    if (progress < 40) return "red";
+    if (progress >= 40 && progress < 80) return "orange";
+    else return "green";
   };
 
   const handleProgress = (delta) => {
@@ -22,30 +24,31 @@ const ProgressBar = () => {
       <h1>Progress Bar</h1>
       <div
         style={{
-          backgroundColor: "lightgray",
+          backgroundColor: "#ddd",
           width: "400px",
           height: "25px",
           borderRadius: "8px",
           position: "relative",
           textAlign: "center",
+          overflow: "hidden",
         }}
       >
         <div
           style={{
             position: "absolute",
             width: `${progress}%`,
+            height: "100%",
             backgroundColor: getBackgroundColor(),
+            transition: "width 0.3s ease-in-out",
           }}
-        ></div>
-        <span>{progress}%</span>
+        />
+        <span style={{ position: "absolute" }}>{progress}%</span>
       </div>
 
-      <button className="progress-button" onClick={() => handleProgress(+10)}>
-        Increase by 10%
-      </button>
-      <button className="progress-button" onClick={() => handleProgress(-10)}>
-        Decrease by 10%
-      </button>
+      <div style={{ marginTop: "20px" }}>
+        <button onClick={() => handleProgress(+10)}>Increase by 10%</button>
+        <button onClick={() => handleProgress(-10)}>Decrease by 10%</button>
+      </div>
     </div>
   );
 };
