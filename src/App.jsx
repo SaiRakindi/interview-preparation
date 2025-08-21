@@ -7,6 +7,7 @@ import ComponentBuilder from "./components/ComponentBuilder/ComponentBuilder";
 import CopyClipboard from "./components/CopyToClipboard/CopyToClipboard";
 import CustomHook from "./components/CustomHook/CustomHook";
 import DarkMode from "./components/DarkMode/DarkMode";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/copy-to-clipboard" element={<CopyClipboard />} />
         <Route path="/toggle-button-custom-hook" element={<CustomHook />} />
         <Route path="/dark-mode-toggle" element={<DarkMode />} />
+        <Route path="/progress-bar" element={<ProgressBar />} />
       </Routes>
     </BrowserRouter>
   );

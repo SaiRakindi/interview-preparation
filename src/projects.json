@@ -28,5 +28,6 @@
     "id": 5,
     "name": "Dark Mode",
     "link": "/dark-mode"
-  }
+  },
+  { "id": 6, "name": "Progress Bar", "link": "/progress-bar" }
 ]
