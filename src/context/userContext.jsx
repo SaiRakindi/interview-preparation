@@ -1,8 +1,8 @@
-import { Children, createContext, useState } from "react";
+import { createContext, useState } from "react";
 
-const UserContext = createContext();
+export const UserContext = createContext();
 
-const UserProvider = () => {
+export const UserProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = () => {
@@ -19,5 +19,3 @@ const UserProvider = () => {
     </UserContext.Provider>
   );
 };
-
-export { UserContext, UserProvider };

@@ -1,8 +1,8 @@
 import React from "react";
-import { UserProvider } from "./userContext";
 import Navbar from "./Navbar";
 import Dashboard from "./Dashboard";
 import "./index.css";
+import { UserProvider } from "../../context/userContext";
 
 const Authentication = () => {
   return (

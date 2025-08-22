@@ -9,6 +9,7 @@ import CustomHook from "./components/CustomHook/CustomHook";
 import DarkMode from "./components/DarkMode/DarkMode";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import ReadMore from "./components/ReadMore/ReadMore";
+import Authentication from "./components/Authentication/Authentication";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/dark-mode-toggle" element={<DarkMode />} />
         <Route path="/progress-bar" element={<ProgressBar />} />
         <Route path="/read-more" element={<ReadMore />} />
+        <Route path="/authentication" element={<Authentication />} />
       </Routes>
     </BrowserRouter>
   );
