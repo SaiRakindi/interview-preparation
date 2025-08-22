@@ -30,5 +30,6 @@
     "link": "/dark-mode"
   },
   { "id": 6, "name": "Progress Bar", "link": "/progress-bar" },
-  { "id": 7, "name": "Read More", "link": "/read-more" }
+  { "id": 7, "name": "Read More", "link": "/read-more" },
+  { "id": 8, "name": "Authentication", "link": "/authentication" }
 ]
