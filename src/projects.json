@@ -31,5 +31,6 @@
   },
   { "id": 6, "name": "Progress Bar", "link": "/progress-bar" },
   { "id": 7, "name": "Read More", "link": "/read-more" },
-  { "id": 8, "name": "Authentication", "link": "/authentication" }
+  { "id": 8, "name": "Authentication", "link": "/authentication" },
+  { "id": 9, "name": "Age Calculator", "link": "/age-calculator" }
 ]

@@ -10,6 +10,7 @@ import DarkMode from "./components/DarkMode/DarkMode";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import ReadMore from "./components/ReadMore/ReadMore";
 import Authentication from "./components/Authentication/Authentication";
+import AgeCalculator from "./components/AgeCalculator/AgeCalculator";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/progress-bar" element={<ProgressBar />} />
         <Route path="/read-more" element={<ReadMore />} />
         <Route path="/authentication" element={<Authentication />} />
+        <Route path="/age-calculator" element={<AgeCalculator />} />
       </Routes>
     </BrowserRouter>
   );
