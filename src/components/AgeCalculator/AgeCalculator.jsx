@@ -21,9 +21,9 @@ const AgeCalculator = () => {
       return;
     }
 
-    let years = todaysDate.getFullYear() - birthday.getFullYear();
-    let months = todaysDate.getMonth() - birthday.getMonth();
-    let days = todaysDate.getDate() - birthday.getDate();
+    let years = today.getFullYear() - birthday.getFullYear();
+    let months = today.getMonth() - birthday.getMonth();
+    let days = today.getDate() - birthday.getDate();
 
     if (months < 0) {
       months += 12;
@@ -50,7 +50,7 @@ const AgeCalculator = () => {
         value={birthdate}
         onChange={(event) => setBirthdate(event.target.value)}
       />
-      <button className="btn-calc" onChange={handleCalculateAge}>
+      <button className="btn-calc" onClick={handleCalculateAge}>
         Calculate Age
       </button>
 
