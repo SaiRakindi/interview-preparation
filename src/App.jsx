@@ -11,6 +11,7 @@ import ProgressBar from "./components/ProgressBar/ProgressBar";
 import ReadMore from "./components/ReadMore/ReadMore";
 import Authentication from "./components/Authentication/Authentication";
 import AgeCalculator from "./components/AgeCalculator/AgeCalculator";
+import SocialShare from "./components/SocialShare/SocialShare";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/read-more" element={<ReadMore />} />
         <Route path="/authentication" element={<Authentication />} />
         <Route path="/age-calculator" element={<AgeCalculator />} />
+        <Route path="/social-share" element={<SocialShare />} />
       </Routes>
     </BrowserRouter>
   );

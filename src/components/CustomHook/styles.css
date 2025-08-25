@@ -9,7 +9,7 @@ body {
   background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
 }
 
-button {
+.toggle-button {
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -22,7 +22,7 @@ button {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-button:hover {
+.toggle-button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
