@@ -6,6 +6,12 @@ const Circles = () => {
   const [circles, setCircles] = useState([]);
   const [redoCircles, setRedoCircles] = useState([]);
 
+  const handleDraw = (event) => {};
+
+  const handleUndo = () => {};
+
+  const handleRedo = () => {};
+
   return (
     <div className="circle-drawer">
       <div
