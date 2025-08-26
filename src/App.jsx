@@ -12,6 +12,7 @@ import ReadMore from "./components/ReadMore/ReadMore";
 import Authentication from "./components/Authentication/Authentication";
 import AgeCalculator from "./components/AgeCalculator/AgeCalculator";
 import SocialShare from "./components/SocialShare/SocialShare";
+import Circles from "./components/Circles/Circles";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/authentication" element={<Authentication />} />
         <Route path="/age-calculator" element={<AgeCalculator />} />
         <Route path="/social-share" element={<SocialShare />} />
+        <Route path="/circles" element={<Circles />} />
       </Routes>
     </BrowserRouter>
   );
