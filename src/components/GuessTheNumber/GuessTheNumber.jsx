@@ -64,6 +64,8 @@ const GuessTheNumber = () => {
         <button onClick={handleGuess}>Check Guess</button>
         <button onClick={resetGame}>Reset Game</button>
       </div>
+
+      {message && <p>{message}</p>}
     </div>
   );
 };
