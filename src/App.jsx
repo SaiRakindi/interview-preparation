@@ -13,6 +13,7 @@ import Authentication from "./components/Authentication/Authentication";
 import AgeCalculator from "./components/AgeCalculator/AgeCalculator";
 import SocialShare from "./components/SocialShare/SocialShare";
 import Circles from "./components/Circles/Circles";
+import GuessTheNumber from "./components/GuessTheNumber/GuessTheNumber";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/age-calculator" element={<AgeCalculator />} />
         <Route path="/social-share" element={<SocialShare />} />
         <Route path="/circles" element={<Circles />} />
+        <Route path="/guess-the-number" element={<GuessTheNumber />} />
       </Routes>
     </BrowserRouter>
   );
