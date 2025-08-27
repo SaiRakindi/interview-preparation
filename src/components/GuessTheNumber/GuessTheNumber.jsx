@@ -51,7 +51,14 @@ const GuessTheNumber = () => {
         placeholder="Enter a number between 1 and 100"
         style={{ width: "300px", padding: "5px" }}
         id="guess-input"
+        value={guess}
+        onChange={(e) => setGuess(e.target.value)}
       />
+
+      <div>
+        <button onClick={handleGuess}>Check Guess</button>
+        <button onClick={resetGame}>Reset Game</button>
+      </div>
     </div>
   );
 };
