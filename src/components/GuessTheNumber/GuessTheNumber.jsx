@@ -35,7 +35,12 @@ const GuessTheNumber = () => {
   };
 
   // Function to reset the game
-  const resetGame = () => {};
+  const resetGame = () => {
+    setGuess("");
+    setMessage("");
+    setNumberToGuess(generateRandomNumber());
+    setAttempts(0);
+  };
 
   return (
     <div
