@@ -1,24 +1,31 @@
 import React from "react";
 
 const TogglePassword = () => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
   return (
     <div className="container">
       <h1 className="title">Toggle Password</h1>
 
       <div className="password-wrapper">
         <input
-          type="text"
+          type={isPasswordVisible ? "text" : "password"}
           id="password"
           placeholder="Enter password"
           className="password-input"
         />
 
-        <span className="icon">
-          <i className="fas fa-eye"></i>
+        <span
+          className="icon"
+          onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+        >
+          {isPasswordVisible ? "🙈" : "👁️"}
         </span>
       </div>
 
-      <span className="visibility-label">Password Hidden</span>
+      <span className="visibility-label">
+        {isPasswordVisible ? "Password Visible" : "Password Hidden"}
+      </span>
     </div>
   );
 };
