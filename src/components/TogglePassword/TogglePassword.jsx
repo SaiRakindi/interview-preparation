@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsEyeSlash, BsFillEyeSlashFill } from "react-icons/bs";
 import { RxEyeOpen } from "react-icons/rx";
+import "./styles.css";
 
 const TogglePassword = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
