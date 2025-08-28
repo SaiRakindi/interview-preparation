@@ -35,5 +35,6 @@
   { "id": 9, "name": "Age Calculator", "link": "/age-calculator" },
   { "id": 10, "name": "Social Share", "link": "/social-share" },
   { "id": 11, "name": "Circles", "link": "/circles" },
-  { "id": 12, "name": "Guess the Number", "link": "/guess-the-number" }
+  { "id": 12, "name": "Guess the Number", "link": "/guess-the-number" },
+  { "id": 13, "name": "Toggle Password", "link": "/toggle-password" }
 ]

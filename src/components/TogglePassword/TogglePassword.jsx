@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { BsEyeSlash, BsFillEyeSlashFill } from "react-icons/bs";
+import { RxEyeOpen } from "react-icons/rx";
 
 const TogglePassword = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   return (
-    <div className="container">
+    <div className="password-container">
       <h1 className="title">Toggle Password</h1>
 
       <div className="password-wrapper">
@@ -19,7 +21,7 @@ const TogglePassword = () => {
           className="icon"
           onClick={() => setIsPasswordVisible(!isPasswordVisible)}
         >
-          {isPasswordVisible ? "🙈" : "👁️"}
+          {!isPasswordVisible ? <BsFillEyeSlashFill /> : <RxEyeOpen />}
         </span>
       </div>
 

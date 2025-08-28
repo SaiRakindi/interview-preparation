@@ -14,6 +14,7 @@ import AgeCalculator from "./components/AgeCalculator/AgeCalculator";
 import SocialShare from "./components/SocialShare/SocialShare";
 import Circles from "./components/Circles/Circles";
 import GuessTheNumber from "./components/GuessTheNumber/GuessTheNumber";
+import TogglePassword from "./components/TogglePassword/TogglePassword";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/social-share" element={<SocialShare />} />
         <Route path="/circles" element={<Circles />} />
         <Route path="/guess-the-number" element={<GuessTheNumber />} />
+        <Route path="/toggle-password" element={<TogglePassword />} />
       </Routes>
     </BrowserRouter>
   );
