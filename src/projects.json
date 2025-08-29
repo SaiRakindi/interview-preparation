@@ -36,5 +36,6 @@
   { "id": 10, "name": "Social Share", "link": "/social-share" },
   { "id": 11, "name": "Circles", "link": "/circles" },
   { "id": 12, "name": "Guess the Number", "link": "/guess-the-number" },
-  { "id": 13, "name": "Toggle Password", "link": "/toggle-password" }
+  { "id": 13, "name": "Toggle Password", "link": "/toggle-password" },
+  { "id": 14, "name": "Rock Paper Scissors", "link": "/rock-paper-scissors" }
 ]
