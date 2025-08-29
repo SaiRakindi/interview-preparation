@@ -11,6 +11,28 @@ const RockPaperScissors = () => {
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
 
+  const playGame = (playerChoice) => {
+    const computerSelection =
+      choices[Math.floor(Math.random() * 3) * choices.length];
+
+    setComputerChoice(computerSelection);
+    setPlayerChoice(playerChoice);
+
+    if (computerSelection === playerChoice) {
+      setResult("It's a tie");
+    } else if (
+      (playerChoice === "rock" && computerSelection === "scissors") ||
+      (playerChoice === "paper" && computerSelection === "rock") ||
+      (playerChoice === "scissors" && computerSelection === "paper")
+    ) {
+      setResult("You Win!");
+      setPlayerScore(playerScore + 1);
+    } else {
+      setResult("You Lose!");
+      setComputerScore(computerScore + 1);
+    }
+  };
+
   return (
     <div className="rockPaperScissor">
       <h1>Rock Paper Scissor</h1>
