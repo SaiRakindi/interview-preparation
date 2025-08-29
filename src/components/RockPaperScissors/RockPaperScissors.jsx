@@ -10,7 +10,24 @@ const RockPaperScissors = () => {
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
 
-  return <div>RockPaperScissors</div>;
+  return (
+    <div className="rockPaperScissor">
+      <h1>Rock Paper Scissor</h1>
+
+      <p>
+        A two-player hand game where each player chooses rock, paper, or
+        scissors.
+      </p>
+
+      <div className="container">
+        <div className="choices">
+          <button onClick={() => playGame("rock")}>👊</button>
+          <button onClick={() => playGame("paper")}>🖐️</button>
+          <button onClick={() => playGame("scissor")}>✌️</button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default RockPaperScissors;
