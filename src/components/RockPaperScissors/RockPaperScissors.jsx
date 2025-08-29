@@ -33,6 +33,14 @@ const RockPaperScissors = () => {
     }
   };
 
+  const resetGame = () => {
+    setPlayerChoice(null);
+    setComputerChoice(null);
+    setResult("Press Any One");
+    setPlayerScore(0);
+    setComputerScore(0);
+  };
+
   return (
     <div className="rockPaperScissor">
       <h1>Rock Paper Scissor</h1>
@@ -48,6 +56,21 @@ const RockPaperScissors = () => {
           <button onClick={() => playGame("paper")}>🖐️</button>
           <button onClick={() => playGame("scissor")}>✌️</button>
         </div>
+      </div>
+
+      <div className="rockPaperScissor-scores">
+        <h3 className="playerScore" data-testid="player-score">
+          Player Score : {playerScore}
+        </h3>
+        <h3 className="computerScore" data-testid="computer-score">
+          Computer Score : {computerScore}
+        </h3>
+      </div>
+
+      <div className="reset-scores">
+        <button onClick={resetGame} data-testid="reset">
+          Reset
+        </button>
       </div>
     </div>
   );
