@@ -20,8 +20,7 @@ import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors"
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<ComponentBuilder />} />
+      {/* <Routes>
         <Route path="/counter" element={<Counter />} />
         <Route path="/chips-input" element={<ChipsInput />} />
         <Route path="/color-explorer" element={<ColorExplorer />} />
@@ -37,7 +36,7 @@ const App = () => {
         <Route path="/guess-the-number" element={<GuessTheNumber />} />
         <Route path="/toggle-password" element={<TogglePassword />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   );
 };
