@@ -16,11 +16,13 @@ import Circles from "./components/Circles/Circles";
 import GuessTheNumber from "./components/GuessTheNumber/GuessTheNumber";
 import TogglePassword from "./components/TogglePassword/TogglePassword";
 import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors";
+import RouteBuilder from "./components/RouteBuilder/RouteBuilder";
 
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Routes>
+      <Routes>
+        <Route path="/" element={<ComponentBuilder />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/chips-input" element={<ChipsInput />} />
         <Route path="/color-explorer" element={<ColorExplorer />} />
@@ -36,7 +38,7 @@ const App = () => {
         <Route path="/guess-the-number" element={<GuessTheNumber />} />
         <Route path="/toggle-password" element={<TogglePassword />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
-      </Routes> */}
+      </Routes>
     </BrowserRouter>
   );
 };
