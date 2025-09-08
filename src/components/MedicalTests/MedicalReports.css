@@ -1,0 +1,94 @@
+.report-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+  height: 100vh;
+  overflow-y: scroll !important;
+}
+
+.report-section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.table-wrapper {
+  overflow-x: auto; /* mobile horizontal scroll */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.out {
+  background-color: #ffcccc;
+  font-weight: bold;
+}
+
+/* Mobile view: cards */
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  td {
+    text-align: left;
+    padding: 8px;
+    border: none;
+  }
+  td::before {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+  td:nth-of-type(1)::before {
+    content: "Test";
+  }
+  td:nth-of-type(2)::before {
+    content: "08-Sep-2025";
+  }
+  td:nth-of-type(3)::before {
+    content: "25-May-2025";
+  }
+  td:nth-of-type(4)::before {
+    content: "Normal Range";
+  }
+}

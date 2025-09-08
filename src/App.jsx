@@ -17,6 +17,7 @@ import GuessTheNumber from "./components/GuessTheNumber/GuessTheNumber";
 import TogglePassword from "./components/TogglePassword/TogglePassword";
 import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors";
 import RouteBuilder from "./components/RouteBuilder/RouteBuilder";
+import MedicalReport from "./components/MedicalTests";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/guess-the-number" element={<GuessTheNumber />} />
         <Route path="/toggle-password" element={<TogglePassword />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
+        <Route path="/deepika-medical-tests" element={<MedicalReport />} />
       </Routes>
     </BrowserRouter>
   );
