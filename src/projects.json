@@ -83,5 +83,11 @@
     "name": "Rock Paper Scissors",
     "link": "/rock-paper-scissors",
     "component": "RockPaperScissors"
+  },
+  {
+    "id": 15,
+    "name": "Confirmation Modal",
+    "link": "/confirmation-modal",
+    "component": "ConfirmationModal"
   }
 ]

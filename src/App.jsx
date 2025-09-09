@@ -18,6 +18,7 @@ import TogglePassword from "./components/TogglePassword/TogglePassword";
 import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors";
 import RouteBuilder from "./components/RouteBuilder/RouteBuilder";
 import MedicalReport from "./components/MedicalTests";
+import ConfirmationModal from "./components/ConfirmationModal";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/toggle-password" element={<TogglePassword />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/deepika-medical-tests" element={<MedicalReport />} />
+        <Route path="/confirmation-modal" element={<ConfirmationModal />} />
       </Routes>
     </BrowserRouter>
   );
