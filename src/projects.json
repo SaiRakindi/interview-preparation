@@ -89,5 +89,11 @@
     "name": "Confirmation Modal",
     "link": "/confirmation-modal",
     "component": "ConfirmationModal"
+  },
+  {
+    "id": 16,
+    "name": "Back to Top",
+    "link": "/back-to-top",
+    "component": "BackToTop"
   }
 ]
