@@ -16,9 +16,9 @@ import Circles from "./components/Circles/Circles";
 import GuessTheNumber from "./components/GuessTheNumber/GuessTheNumber";
 import TogglePassword from "./components/TogglePassword/TogglePassword";
 import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors";
-import RouteBuilder from "./components/RouteBuilder/RouteBuilder";
 import MedicalReport from "./components/MedicalTests";
 import ConfirmationModal from "./components/ConfirmationModal";
+import BackToTop from "./components/BackToTop";
 
 const App = () => {
   return (
@@ -42,6 +42,7 @@ const App = () => {
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/deepika-medical-tests" element={<MedicalReport />} />
         <Route path="/confirmation-modal" element={<ConfirmationModal />} />
+        <Route path="/back-to-top" element={<BackToTop />} />
       </Routes>
     </BrowserRouter>
   );
