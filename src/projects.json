@@ -96,4 +96,10 @@
     "link": "/back-to-top",
     "component": "BackToTop"
   }
+  {
+    "id": 17,
+    "name": "Auto Save Text",
+    "link": "/auto-save-text",
+    "component": "AutoSaveText"
+  }
 ]

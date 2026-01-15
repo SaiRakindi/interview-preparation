@@ -19,6 +19,7 @@ import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors"
 import MedicalReport from "./components/MedicalTests";
 import ConfirmationModal from "./components/ConfirmationModal";
 import BackToTop from "./components/BackToTop";
+import AutoSaveInput from "./components/AutoSaveText";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/deepika-medical-tests" element={<MedicalReport />} />
         <Route path="/confirmation-modal" element={<ConfirmationModal />} />
         <Route path="/back-to-top" element={<BackToTop />} />
+        <Route path="/auto-save-text" element={<AutoSaveInput />} />
       </Routes>
     </BrowserRouter>
   );
